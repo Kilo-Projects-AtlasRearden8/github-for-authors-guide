@@ -129,3 +129,17 @@ footer p { margin: 0.25rem 0; }
   h1 { font-size: 1.6rem; }
   main { padding: 1.5rem 0.75rem 3rem; }
 }
+
+/* Print stylesheet: clean, ink-friendly checklist */
+@media print {
+  * { background: transparent !important; color: #000 !important; box-shadow: none !important; text-shadow: none !important; }
+  a { color: #000 !important; text-decoration: none; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 0.8rem; }
+  header.site-header, nav.toc, .tip { display: none !important; }
+  section { margin-bottom: 1.5rem; page-break-inside: avoid; }
+  h1, h2, h3 { page-break-after: avoid; }
+  ul { page-break-inside: avoid; }
+  input[type="checkbox"] { display: inline-block; width: 1rem; height: 1rem; margin-right: 0.5rem; }
+  body { padding: 0; font-size: 11pt; line-height: 1.4; }
+  .credit-bar { display: block !important; font-size: 0.8rem; margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid #000; }
+}
