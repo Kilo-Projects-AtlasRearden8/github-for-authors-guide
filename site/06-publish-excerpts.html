@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6. Publish excerpts from your book — GitHub for Authors</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">GitHub for Authors</h1>
+    <p class="site-tagline">A beginner manual for authors: hosting a free author site, tracking edits, and publishing excerpts with GitHub Pages.</p>
+    <div class="credit-bar">Created and maintained by <strong>Asdale Dynamics, LLC</strong>. Copyright (c) 2026 Asdale Dynamics, LLC.</div>
+  </div>
+</header>
+
+<main>
+  <nav class="toc">
+    <h3>Sections</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="01-welcome.html">1. Welcome</a></li>
+      <li><a href="02-create-your-github-account.html">2. Create your GitHub account</a></li>
+      <li><a href="03-create-your-author-repository.html">3. Create your author repository</a></li>
+      <li><a href="04-track-your-edits.html">4. Track your edits</a></li>
+      <li><a href="05-publish-your-author-site.html">5. Publish your free author site with GitHub Pages</a></li>
+      <li><a href="06-publish-excerpts.html">6. Publish excerpts from your book</a></li>
+      <li><a href="printable-checklist.html">7. Printable checklist</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h1>6. Publish excerpts from your book</h1>
+    <p>An <strong>excerpt</strong> is a short sample from your book — a chapter, a scene, or a few pages you want readers to try before they buy. Publishing excerpts on your author site gives people a taste of your writing and links them to where they can get the full book.</p>
+
+    <h2>Option A: Publish an excerpt as a page (simplest)</h2>
+    <ol class="steps">
+      <li>In your repository, click <strong>Add file</strong> &rarr; <strong>Create new file</strong>.</li>
+      <li>Name the file something clear, for example <code>excerpt-chapter-1.md</code>.</li>
+      <li>Write your excerpt in the text box. You can use basic formatting:</li>
+    </ol>
+    <ul>
+      <li><code># Chapter One</code> makes a heading.</li>
+      <li><code>**bold**</code> makes bold text.</li>
+      <li><code>*italic*</code> makes italic text.</li>
+    </ul>
+    <ol class="steps" start="4">
+      <li>At the bottom, write a commit message like "Added Chapter 1 excerpt".</li>
+      <li>Click <strong>Commit changes</strong>.</li>
+    </ol>
+    <p>Your excerpt is now published at:</p>
+    <p style="font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#f3f4f6; padding:0.5rem; border-radius:4px;">https://dylanasdale.github.io/excerpt-chapter-1/</p>
+
+    <h2>Option B: Publish several excerpts as blog-style posts</h2>
+    <p>If you plan to share many excerpts, create a folder:</p>
+    <ol class="steps">
+      <li>Click <strong>Add file</strong> &rarr; <strong>Create new file</strong>.</li>
+      <li>Name it <code>_posts/excerpt-1.md</code> (GitHub will create the <code>_posts</code> folder for you).</li>
+      <li>Write your excerpt.</li>
+      <li>Commit the file.</li>
+    </ol>
+    <p>Link to each excerpt from your <code>README.md</code> or from a dedicated excerpts page.</p>
+
+    <h2>Add an excerpts page to your site</h2>
+    <ol class="steps">
+      <li>Edit your <code>README.md</code> file.</li>
+      <li>Add a section like this:</li>
+    </ol>
+    <pre style="background:#f3f4f6; padding:0.75rem; border-radius:4px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:0.9rem;">## Free excerpts
+
+Read samples from *The Massive AI Manual*:
+
+- [Chapter 1 excerpt](excerpt-chapter-1/)
+- [Chapter 3 excerpt](excerpt-chapter-3/)</pre>
+    <ol class="steps" start="3">
+      <li>Commit the change.</li>
+    </ol>
+
+    <h2>Link to where readers can buy the book</h2>
+    <p>At the bottom of each excerpt, add a sentence like:</p>
+    <blockquote style="border-left:4px solid var(--line); padding-left:1rem; color:var(--muted);">
+      Enjoyed this sample? Get the full book: <em>The Massive AI Manual</em> by Dylan Asdale.
+    </blockquote>
+    <p>Then link to your book's sales page (Amazon, KDP, your own site, etc.).</p>
+
+    <section class="credits" style="margin-top:2rem;">
+      <h3>Credits</h3>
+      <p>Created and maintained by <strong>Asdale Dynamics, LLC</strong>. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+      <p><a href="index.html">Back to home</a></p>
+    </section>
+  </section>
+</main>
+
+</body>
+</html>
